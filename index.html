@@ -22,11 +22,12 @@
         </section>
         <section>
             <h1>Quem sou eu?</h1>
-            <h2>Estevan Bartmann Silveira</h2>
-            <p>Desenvolvedor na TecnoSpeed</p>
-            <p>Organizador no DevPR</p>
-            <p>github.com/estevanbs</p>
-            <p>linkedin.com/in/estevan-silveira</p>
+            <h2 class="fragment">Estevan Bartmann Silveira</h2>
+            <p class="fragment">Desenvolvedor na TecnoSpeed</p>
+            <p class="fragment">Organizador do DevPR</p>
+            <p class="fragment">AWS Certified Cloud Practitioner</p>
+            <p class="fragment">github.com/estevanbs</p>
+            <p class="fragment">linkedin.com/in/estevan-silveira</p>
         </section>
         <section>
             <ul>
@@ -35,6 +36,7 @@
                 <li>Vantagens e desvantagens</li>
                 <li>Impacto no mercado</li>
                 <li>Principais provedores públicos</li>
+                <li>Exemplo prático de uma arquitetura na nuvem escalável</li>
             </ul>
         </section>
         <section>
@@ -48,7 +50,7 @@
         <section>
             <h2>Time-sharing</h2>
             <img class="r-stretch" src="assets/john-mccarthy.jpg">
-            <p>John Mccarthy</p>
+            <p>John Mccarthy - década de 60</p>
         </section>
         <section>
             <h2>Remote job entry</h2>
@@ -60,7 +62,7 @@
         <section>
             <h2>Cloud computing</h2>
             <img class="r-stretch" src="assets/ramnath-chellapa.jpg">
-            <p>Ramnath Chellapa</p>
+            <p>Ramnath Chellapa - 1997</p>
             <p>"Cloud computing é um paradigma da computação onde os limites computacionais estão determinados pelo
                 custo, não pelos limites técnicos."</p>
         </section>
@@ -71,6 +73,8 @@
             <p class="fragment">Distribuição global de recursos computacionais</p>
             <p class="fragment">Alta disponibilidade</p>
             <p class="fragment">Terceirização das responsabilidades</p>
+            <p class="fragment">Mais ecológico</p>
+            <p class="fragment">Startups podem ter sua infraestrutura sem um alto custo inicial</p>
             <p class="fragment">...</p>
         </section>
         <section><h1>Tipos de cloud computing</h1></section>
@@ -78,7 +82,6 @@
             <section>IaaS (Infrastructure as a Service)</section>
             <section><img src="assets/aws-logo.png"></section>
             <section><img src="assets/azure-logo.png"></section>
-            <section><img src="assets/raspberry-pi-logo"></section>
         </section>
         <section>
             <section>SaaS (Software as a Service)</section>
@@ -100,10 +103,10 @@
             <section>
                 <h3>Nuvem Privada</h3>
                 <p class="fragment">
-                    A infraestrutura é organizada pela organização que está contratando ela.
+                    A infraestrutura é dedicada a uma única organização.
                 </p>
                 <p class="fragment">
-                    Pode ser on-premise ou off-premise.
+                    Pode ser on-premise (datacenter interno) ou off-premise (datacenter público).
                 </p>
             </section>
             <section>
@@ -114,10 +117,53 @@
             </section>
         </section>
         <section>
-            <section>SaaS (Software as a Service)</section>
-            <section><img src="assets/chatgpt-logo"></section>
-            <section><img src="assets/youtube-logo"></section>
-            <section><img src="assets/xboxcloud-logo"></section>
+            <h1>Principais provedores de cloud computing</h1>
+            <ul>
+                <li class="fragment">Amazon Web Services (AWS)</li>
+                <li class="fragment">Microsoft Azure</li>
+                <li class="fragment">Google Cloud Platform (GCP)</li>
+                <li class="fragment">Oracle Cloud, Alibaba Cloud...</li>
+            </ul>
+        </section>
+        <section>Como as grandes empresas aproveitam as vantagens da cloud?</section>
+        <section>
+            <h1>Netflix</h1>
+            <p class="fragment">Como a netflix consegue lançar um novo filme ou série, o mundo assistir simultaneamente,
+                e mesmo assim ter um
+                pequeno impacto no tráfego mundial de internet?</p>
+            <p class="fragment">CDN</p>
+        </section>
+        <section><h1>E como isso funciona?</h1></section>
+        <section><img src="assets/exemplo-cnd-australia.png"/></section>
+        <section><img src="assets/mapa-cdn-netflix.png"/></section>
+        <section><p>Com essa infraestrutura, ela distribui dezenas de terabits por segundo em horários de pico.</p>
+        </section>
+        <section>
+            <h1>Spotify</h1>
+            <p class="fragment">O serviço de sugestão de busca do Spotify parou de funcionar, mas os usuários nem
+                perceberam. Como conseguiram fazer isso?</p>
+            <p class="fragment">Microserviços</p>
+        </section>
+        <section><h1>E como isso funciona?</h1></section>
+        <section>
+            <img class="r-stretch" src="assets/microservices.jpg"/>
+            <ul>
+                <li class="fragment">Com essa arquitetura, se um serviço parar de funcionar, somente as pessoas que
+                    dependem dele
+                    especificamente sentirão o impacto.
+                </li>
+                <li class="fragment">Ela também facilita o uso de flag feature para os deploys.</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Serverless computing (computação sem servidor?)</h1>
+            <p class="fragment">Serverless Computing é um modelo de computação em nuvem onde o provedor gerencia
+                automaticamente a infraestrutura necessária para executar código em resposta a eventos.</p>
+        </section>
+        <section><img src="assets/serverless-computing.png"/></section>
+        <section>
+            <h4>Exemplo de utilização de cloud computing em um projeto pessoal</h4>
+            <h3>Minha Netflix privada</h3>
         </section>
     </div>
 </div>
